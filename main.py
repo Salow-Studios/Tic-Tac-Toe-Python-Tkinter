@@ -3,16 +3,16 @@ from tkinter import messagebox
 
 
 def ButtonClick(button):
-    global btn_click, flag
+    global x_o, flag
     button["bg"] = "#2ec4b6"
-    if button["text"] == "" and btn_click == True:
+    if button["text"] == "" and x_o == True:
         button["text"] = "X"
-        btn_click = False
+        x_o = False
         checkforwin()
         flag = flag+1
-    elif button["text"] == "" and btn_click == False:
+    elif button["text"] == "" and x_o == False:
         button["text"] = "O"
-        btn_click = True
+        x_o = True
         checkforwin()
         flag = flag+1
     else:
@@ -44,7 +44,7 @@ def checkforwin():
 main = Tk()
 main.title("Tic Tac Toe")
 
-btn_click = True
+x_0 = True
 flag = 0
 
 button1 = Button(main, text="", font=("arial", 60, "bold"),
