@@ -44,7 +44,6 @@ def checkforwin():
 main = Tk()
 main.title("Tic Tac Toe")
 
-button = StringVar()
 btn_click = True
 flag = 0
 
