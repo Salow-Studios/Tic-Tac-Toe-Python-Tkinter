@@ -44,7 +44,7 @@ def checkforwin():
 main = Tk()
 main.title("Tic Tac Toe")
 
-x_0 = True
+x_o = True
 flag = 0
 
 button1 = Button(main, text="", font=("arial", 60, "bold"),
